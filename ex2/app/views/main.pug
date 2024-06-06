@@ -1,0 +1,28 @@
+extends layout
+
+block content
+    .w3-responsive
+        table.w3-table-all.w3-striped
+            tr
+                th 
+                    b id
+                th 
+                    b title
+                th 
+                    b author
+                th 
+                    b publishDate,
+                th 
+                    b pages
+
+            for livro in livros
+                tr
+                    td
+                        a(href="/"+livro._id)=livro._id
+                    td=livro.title
+                    
+                    td
+                        each auth in livro.author
+                            a(href="/"+auth)=auth
+                    td=livro.publishDate
+                    td=livro.pages

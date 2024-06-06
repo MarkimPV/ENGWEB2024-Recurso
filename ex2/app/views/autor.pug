@@ -1,0 +1,82 @@
+extends layout
+
+block content
+    .w3-responsive
+        table.w3-table-all.w3-striped
+            tr
+                tr 
+                    a(href="/") Menu Principal
+                img(src=livro.coverImg alt='BookCover')
+            tr
+                td id
+                td=livro._id
+            tr
+                td title
+                td=livro.title
+            tr
+                td series
+                td=livro.title
+            tr
+                td author
+                td=livro.author
+            tr
+                td rating
+                td=livro.rating
+            tr
+                td description
+                td=livro.description
+            tr
+                td language
+                td=livro.language
+            tr
+                td isbn
+                td=livro.isbn
+            tr
+                td genres
+                td=livro.genres
+            tr
+                td characters
+                td=livro.characters
+            tr
+                td bookFormat
+                td=livro.bookFormat
+            tr
+                td edition
+                td=livro.edition
+            tr
+                td pages
+                td=livro.pages
+            tr
+                td publisher
+                td=livro.publisher
+            tr
+                td publishDate
+                td=livro.publishDate
+            tr
+                td firstPublishDate
+                td=livro.firstPublishDate
+            tr
+                td awards
+                td=livro.awards
+            tr
+                td numRatings
+                td=livro.numRatings
+            tr
+                td ratingsByStars
+                td=livro.ratingsByStars
+            tr
+                td likedPercent
+                td=livro.likedPercent
+            tr
+                td setting
+                td=livro.setting
+            tr
+                td bbeScore
+                td=livro.bbeScore
+            tr
+                td bbeVotes
+                td=livro.bbeVotes
+            tr
+                td price
+                td=livro.price
+
